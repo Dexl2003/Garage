@@ -13,5 +13,9 @@
         <item name="android:background">@drawable/rounded_background_button_ok</item>
     </style>
 
+    <style name="TextColors">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 
 </resources>

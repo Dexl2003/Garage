@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity() {
             file.createNewFile()
 
         val userPhotoView: ImageView = findViewById(R.id.imageView_userPhoto)
-        userPhotoView.setImageResource(R.drawable.img)
+        userPhotoView.setImageResource(R.drawable.img_empty_photo)
 
         val userNameText: TextView = findViewById(R.id.textView_UserName)
-        userNameText.setText("Новый пользователь")
+        userNameText.setText("Ирина")
         val userPostText: TextView = findViewById(R.id.textView_userPost)
-        userPostText.setText("Админ")
+        userPostText.setText("Бета-Тест")
 
         val dateTextView: TextView = findViewById(R.id.textView_date)
 
