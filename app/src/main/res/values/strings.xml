@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dog_Live</string>
+    <string name="userName">Имя пользователя</string>
+    <string name="userPost">Должность</string>
+    <string name="Date">Дата</string>
+    <string name="Calendar">Календарь</string>
+    <string name="owners_name">Фимилия Имя</string>
+    <string name="pet_name">Кличка собаки</string>
+    <string name="pet_breed">Парода</string>
+    <string name="record_time">Время</string>
+    <string name="record_date">Дата</string>
+    <string name="record_button">Записать</string>
+    <string name="record_title">Запись</string>
+    <string name="cancel_button">Отмена</string>
+</resources>

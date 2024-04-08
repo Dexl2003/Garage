@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <EditText
+        android:id="@+id/editText_ownersName"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#A8A8A8"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:ems="10"
+        android:hint="@string/owners_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/editText_petName"
+        app:layout_constraintEnd_toEndOf="@+id/editText_petName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_petName" />
+
+    <EditText
+        android:id="@+id/editText_petName"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#A8A8A8"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:ems="10"
+        android:hint="@string/pet_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/editText_petBreed"
+        app:layout_constraintEnd_toEndOf="@+id/editText_petBreed"
+        app:layout_constraintStart_toStartOf="@+id/editText_petBreed" />
+
+    <EditText
+        android:id="@+id/editText_petBreed"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#A8A8A8"
+        android:ems="10"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:hint="@string/pet_breed"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/editText_datePicker"
+        app:layout_constraintEnd_toEndOf="@+id/editText_datePicker"
+        app:layout_constraintStart_toStartOf="@+id/editText_datePicker" />
+
+    <EditText
+        android:id="@+id/editText_timePicker"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#A8A8A8"
+        android:ems="10"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:hint="@string/record_time"
+        android:inputType="time"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/record_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_datePicker"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#A8A8A8"
+        android:ems="10"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:hint="@string/record_date"
+        android:inputType="date"
+        android:focusable="false"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A8A8"
+        app:layout_constraintBottom_toTopOf="@+id/editText_timePicker"
+        app:layout_constraintEnd_toEndOf="@+id/editText_timePicker"
+        app:layout_constraintStart_toStartOf="@+id/editText_timePicker" />
+
+    <Button
+        android:id="@+id/record_button"
+        style="@style/RecordButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:text="@string/record_button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:text="@string/cancel_button"
+        style="@style/CancelButtonStyle"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record_button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@res/font/bahnschrift.TTF"
+        android:text="@string/record_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_ownersName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
