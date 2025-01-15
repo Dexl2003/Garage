@@ -6,11 +6,11 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/fs"
+        android:icon="@drawable/img"
         android:label="Garage"
-        android:roundIcon="@drawable/fs"
+        android:roundIcon="@drawable/img"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Dog_Live"
+        android:theme="@style/Theme.Garage"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
