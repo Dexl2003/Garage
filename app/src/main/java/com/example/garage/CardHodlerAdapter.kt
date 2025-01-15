@@ -1,4 +1,4 @@
-package com.example.dog_live
+package com.example.garage
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -20,8 +20,8 @@ class CardHodlerAdapter(private val data: MutableList<CardData>) : RecyclerView.
 
          val data = data.get(position)
          holder.ownersNameTextView.text = data.ownersName
-         holder.petBreedTextView.text = data.petBreed
-         holder.petNameTextView.text = data.petName
+         holder.carTypeTextView.text = data.carType
+         holder.carNameTextView.text = data.carName
          holder.timeRecordTextView.text = data.timeRecord
 
     }

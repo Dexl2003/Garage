@@ -1,4 +1,4 @@
-package com.example.dog_live
+package com.example.garage
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -71,8 +71,8 @@ class RecordActivity : AppCompatActivity() {
         recordButton.setOnClickListener{
 
             val item = CardData(
-                petName =    petName?.text.toString(),
-                petBreed =   petBreed?.text.toString(),
+                carName =    petName?.text.toString(),
+                carType =   petBreed?.text.toString(),
                 timeRecord = timeRecord?.text.toString(),
                 ownersName = ownerName?.text.toString(),
                 dateRecord = dateRecord?.text.toString()

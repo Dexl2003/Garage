@@ -13,7 +13,8 @@
         android:id="@+id/textView_petName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@res/font/bahnschrift.TTF"
         android:text="Рекс"
         android:textAlignment="center"
@@ -21,22 +22,25 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_timeRecord" />
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toEndOf="@+id/textView_timeRecord"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_PetBreed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@res/font/bahnschrift.TTF"
         android:text="Немецкая овчарка"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_timeRecord"
+        app:layout_constraintStart_toStartOf="@+id/textView_timeRecord"
+        app:layout_constraintTop_toBottomOf="@+id/textView_timeRecord" />
 
     <TextView
         android:id="@+id/textView_timeRecord"
@@ -55,16 +59,17 @@
         android:id="@+id/textView_OwnersName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@res/font/bahnschrift.TTF"
         android:text="Иванов Иван"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_petName" />
+        app:layout_constraintEnd_toEndOf="@+id/textView_petName"
+        app:layout_constraintStart_toStartOf="@+id/textView_petName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_petName"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

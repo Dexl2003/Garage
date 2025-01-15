@@ -1,4 +1,4 @@
-package com.example.dog_live
+package com.example.garage
 
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView

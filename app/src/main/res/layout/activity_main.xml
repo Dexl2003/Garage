@@ -14,49 +14,10 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView_UserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@res/font/bahnschrift.TTF"
-            android:text="@string/userName"
-            android:textAlignment="textStart"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView_userPost"
-            app:layout_constraintEnd_toEndOf="@+id/textView_userPost"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView_userPost" />
-
-        <TextView
-            android:id="@+id/textView_userPost"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="76dp"
-            android:fontFamily="@res/font/bahnschrift.TTF"
-            android:text="@string/userPost"
-            android:textAlignment="textStart"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_calendar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
-            app:layout_constraintStart_toEndOf="@+id/imageView_userPhoto" />
-
-        <ImageView
-            android:id="@+id/imageView_userPhoto"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView_date"
@@ -73,19 +34,17 @@
 
         <Button
             android:id="@+id/button_calendar"
+            style="@style/RecordButtonStyle"
             android:layout_width="181dp"
             android:layout_height="48dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:text="@string/Calendar"
             android:textAlignment="center"
-            style="@style/RecordButtonStyle"
             android:textSize="20sp"
             app:backgroundTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView_userPhoto" />
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

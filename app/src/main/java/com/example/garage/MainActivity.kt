@@ -1,4 +1,4 @@
-package com.example.dog_live
+package com.example.garage
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -14,7 +14,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
 
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -42,17 +41,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val file = File(filesDir,"data.json")
+        val file = File(filesDir,"date.json")
         if (!file.exists())
             file.createNewFile()
 
-        val userPhotoView: ImageView = findViewById(R.id.imageView_userPhoto)
-        userPhotoView.setImageResource(R.drawable.img_empty_photo)
 
-        val userNameText: TextView = findViewById(R.id.textView_UserName)
-        userNameText.setText("Ирина")
-        val userPostText: TextView = findViewById(R.id.textView_userPost)
-        userPostText.setText("Бета-Тест")
 
         val dateTextView: TextView = findViewById(R.id.textView_date)
 

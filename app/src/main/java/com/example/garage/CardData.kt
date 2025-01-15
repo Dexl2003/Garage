@@ -1,8 +1,8 @@
-package com.example.dog_live
+package com.example.garage
 
 data class CardData(
-    val petName: String?,
-    val petBreed: String?,
+    val carName: String?,
+    val carType: String?,
     val timeRecord: String?,
     val ownersName: String?,
     val dateRecord: String?
